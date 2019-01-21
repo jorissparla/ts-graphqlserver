@@ -1,0 +1,44 @@
+{
+  "name": "lemonserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec ts-node src/index.ts",
+    "init": "gql-gen init",
+    "code": "gql-gen --config codegen.yml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/dotenv": "^6.1.0",
+    "@types/uuid": "^3.4.4",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^6.2.0",
+    "graphql": "^14.1.1",
+    "graphql-import": "^0.7.1",
+    "graphql-tools": "^4.0.3",
+    "graphql-yoga": "^1.17.0",
+    "mssql": "^4.3.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.12",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.0.5",
+    "@types/mssql": "^4.0.11",
+    "@types/node": "^10.12.18",
+    "graphql-code-generator": "^0.16.0",
+    "graphql-codegen-introspection": "^0.16.0",
+    "graphql-codegen-typescript-common": "0.16.0",
+    "graphql-codegen-typescript-resolvers": "0.16.0",
+    "graphql-codegen-typescript-server": "0.16.0",
+    "introspection": "^1.1.0",
+    "nodemon": "^1.18.9",
+    "ts-node": "^7.0.1",
+    "typescript": "^2.5.2"
+  }
+}
