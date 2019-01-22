@@ -32,7 +32,7 @@ export const resolvers: IResolvers = {
         password: hashedPassword
       });
       await user.save();
-      return { ...user, password: "XXXXX" };
+      return { ...user, password: "*****" };
     },
     loginUser: async (_, { input }: LoginUserMutationArgs, ctx, info) => {
       const { email, password } = input;
