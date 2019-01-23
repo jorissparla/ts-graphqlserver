@@ -1,11 +1,13 @@
 type Query {
   hello(name: String): String!
   users: [User!]!
+  tasks: [Task!]!
 }
 
 type Mutation {
   signupUser(input: InputSignUpUser!): User
   loginUser(input: InputLoginUpUser!): User
+  createTask(input: InputTask): Task
 }
 input InputSignUpUser {
   name: String!
@@ -17,9 +19,20 @@ input InputLoginUpUser {
   password: String!
 }
 
+input InputTask {
+  body: String!
+}
+
 type User {
   id: ID!
   name: String!
   email: String!
   password: String!
+}
+
+type Task {
+  id: ID!
+  body: String!
+  created_at: String
+  updated_at: String
 }

@@ -1,18 +1,36 @@
-{
-  "type": "mssql",
-  "host": "localhost",
-  "username": "test",
-  "password": "test",
-  "database": "test",
-  "synchronize": true,
-  "logging": false,
+[
+  {
+    "name": "default",
+    "type": "mssql",
+    "host": "localhost",
+    "username": "test",
+    "password": "test",
+    "database": "test",
+    "synchronize": true,
+    "logging": false,
 
-  "entities": ["src/entity/**/*.ts"],
-  "migrations": ["src/migration/**/*.ts"],
-  "subscribers": ["src/subscriber/**/*.ts"],
-  "cli": {
-    "entitiesDir": "src/entity",
-    "migrationsDir": "src/migration",
-    "subscribersDir": "src/subscriber"
+    "entities": ["src/entity/**/*.ts"],
+    "migrations": ["src/migration/**/*.ts"],
+    "subscribers": ["src/subscriber/**/*.ts"],
+    "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    }
+  },
+  {
+    "name": "app",
+    "type": "mssql",
+    "host": "nlbavwixsdb1.infor.com",
+    "port": 1433,
+    "username": "app",
+    "password": "@App12345",
+    "database": "app",
+    "schema": "dbo",
+    "synchronize": true,
+    "entities": ["src/entity2/**/*.ts"],
+    "cli": {
+      "entitiesDir": "src/entity2"
+    }
   }
-}
+]

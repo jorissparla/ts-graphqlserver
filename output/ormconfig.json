@@ -1,0 +1,16 @@
+[
+  {
+    "name": "default",
+    "type": "mssql",
+    "host": "nlbavwixsdb1.infor.com",
+    "port": 1433,
+    "username": "app",
+    "password": "@App12345",
+    "database": "app",
+    "schema": "dbo",
+    "synchronize": false,
+    "entities": [
+      "entities/*.js"
+    ]
+  }
+]
